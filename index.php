@@ -15,7 +15,7 @@ and open the template in the editor.
         
         $students = array();
         
-        //creates the first student
+        //creates the first student.
         $first = new Student();
         $first->surname = "Doe";
         $first->first_name = "John";
