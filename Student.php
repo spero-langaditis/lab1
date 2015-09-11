@@ -1,15 +1,9 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of Student
+ * Student class represents a student
  *
- * @author spero
+ * @author Speridon Langaditis
  */
 class Student {
 
