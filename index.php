@@ -15,6 +15,7 @@ and open the template in the editor.
         
         $students = array();
         
+        //creates the first student
         $first = new Student();
         $first->surname = "Doe";
         $first->first_name = "John";
@@ -24,7 +25,8 @@ and open the template in the editor.
         $first->add_grade(75);
         $first->add_grade(55);
         $students['j123'] = $first;
-
+        
+        //creates a second student
         $second = new Student();
         $second->surname = "Einstein";
         $second->first_name = "Albert";
@@ -36,12 +38,21 @@ and open the template in the editor.
         $second->add_grade(50);
         $students['a456'] = $second;
         
+        //creates a third student
+        $third = new Student();
+        $third->surname = "Langaditis";
+        $third->first_name = "Speridon";
+        $third->add_email('home', 'slangaditis94@hotmail.com');
+        $third->add_grade(100);
+        $third->add_grade(100);
+        $students['s789'] = $third;
+        
+        //sorts the students alphabetically
         ksort($students);
         
+        //displays all the students
         foreach ($students as $student)
             echo $student->toString();
-        
-        
 
         ?>
     </body>
